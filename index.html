@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero In The Forest</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="ui-container">
+      <div id="hud">
+        <div class="hud-item"><span id="hud-health">Health: 100</span></div>
+        <div class="hud-item"><span id="hud-coins">Coins: 0</span></div>
+        <div class="hud-item"><span id="hud-resources">Resources: 0</span></div>
+      </div>
+      <div id="inventory-ui" style="display: none;">
+        <h2>Crafting Table</h2>
+        <p>Cost: 10 Resources + 50 Coins</p>
+        <button id="btn-craft">Craft Weapon (Gacha)</button>
+        <p id="gacha-result"></p>
+        <h3>Your Weapons</h3>
+        <ul id="weapon-list"></ul>
+      </div>
+      <div id="interaction-prompt" style="display: none;">[E] Craft</div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/UI.js"></script>
+  </body>
+</html>
